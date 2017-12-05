@@ -22,7 +22,6 @@ function swapColors() {
 
 var bIsOn = false;
 $(document).ready(function() {
-	console.log("let's party...");
 	swapColors();
 	chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 		swapColors();
