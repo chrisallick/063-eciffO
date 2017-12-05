@@ -1,0 +1,23 @@
+{
+    "name": "063 eciffO",
+    "description": "New theme for Microsoft Outlook 360 Mail.",
+    "version": "2.5",
+    "manifest_version": 2,
+    "content_scripts": [{
+        "matches": ["https://outlook.office365.com/owa/?realm=deutschinc.com"],
+        "js": ["jq.2.min.js", "main.js"]
+    }],
+    "permissions": [
+        "tabs", "http://*/*", "https://*/*", "storage", "activeTab"
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "icons": {
+        "64": "icon64.png",
+        "128": "icon128.png"
+    }
+}
