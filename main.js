@@ -22,6 +22,7 @@ function swapColors() {
 
 var bIsOn = false;
 $(document).ready(function() {
+	alert("sup");
 	swapColors();
 	chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 		swapColors();

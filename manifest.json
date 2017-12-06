@@ -4,7 +4,7 @@
     "version": "2.5",
     "manifest_version": 2,
     "content_scripts": [{
-        "matches": ["https://outlook.office365.com/owa/?realm=deutschinc.com"],
+        "matches": ["https://outlook.office.com/owa/?*"],
         "js": ["jq.2.min.js", "main.js"]
     }],
     "permissions": [
